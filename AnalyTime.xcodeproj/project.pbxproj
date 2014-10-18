@@ -14,6 +14,7 @@
 		C431D12F19F13F7100CA0EC8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C431D12E19F13F7100CA0EC8 /* Images.xcassets */; };
 		C431D13219F13F7100CA0EC8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C431D13019F13F7100CA0EC8 /* LaunchScreen.xib */; };
 		C431D13E19F13F7100CA0EC8 /* AnalyTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C431D13D19F13F7100CA0EC8 /* AnalyTimeTests.swift */; };
+		C431D14A19F17C8E00CA0EC8 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C431D14919F17C8E00CA0EC8 /* EventKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		C431D13719F13F7100CA0EC8 /* AnalyTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnalyTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C431D13C19F13F7100CA0EC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C431D13D19F13F7100CA0EC8 /* AnalyTimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyTimeTests.swift; sourceTree = "<group>"; };
+		C431D14919F17C8E00CA0EC8 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C431D14A19F17C8E00CA0EC8 /* EventKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +64,7 @@
 		C431D11719F13F7100CA0EC8 = {
 			isa = PBXGroup;
 			children = (
+				C431D14919F17C8E00CA0EC8 /* EventKit.framework */,
 				C431D12219F13F7100CA0EC8 /* AnalyTime */,
 				C431D13A19F13F7100CA0EC8 /* AnalyTimeTests */,
 				C431D12119F13F7100CA0EC8 /* Products */,
@@ -411,6 +415,7 @@
 				C431D14319F13F7100CA0EC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C431D14419F13F7100CA0EC8 /* Build configuration list for PBXNativeTarget "AnalyTimeTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				C431D14619F13F7100CA0EC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
