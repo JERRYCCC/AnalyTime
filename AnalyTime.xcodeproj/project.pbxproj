@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C40D0FCA19F6ABF2002BF202 /* EventDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40D0FC919F6ABF2002BF202 /* EventDoc.swift */; };
+		C40D0FCC19F6B1B6002BF202 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40D0FCB19F6B1B6002BF202 /* Event.swift */; };
 		C431D12619F13F7100CA0EC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C431D12519F13F7100CA0EC8 /* AppDelegate.swift */; };
 		C431D12819F13F7100CA0EC8 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C431D12719F13F7100CA0EC8 /* FirstViewController.swift */; };
 		C431D12A19F13F7100CA0EC8 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C431D12919F13F7100CA0EC8 /* SecondViewController.swift */; };
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C40D0FC919F6ABF2002BF202 /* EventDoc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDoc.swift; sourceTree = "<group>"; };
+		C40D0FCB19F6B1B6002BF202 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		C431D12019F13F7100CA0EC8 /* AnalyTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnalyTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C431D12419F13F7100CA0EC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C431D12519F13F7100CA0EC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				C431D12419F13F7100CA0EC8 /* Info.plist */,
+				C40D0FC919F6ABF2002BF202 /* EventDoc.swift */,
+				C40D0FCB19F6B1B6002BF202 /* Event.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -220,8 +226,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C431D12A19F13F7100CA0EC8 /* SecondViewController.swift in Sources */,
+				C40D0FCA19F6ABF2002BF202 /* EventDoc.swift in Sources */,
 				C431D12619F13F7100CA0EC8 /* AppDelegate.swift in Sources */,
 				C431D12819F13F7100CA0EC8 /* FirstViewController.swift in Sources */,
+				C40D0FCC19F6B1B6002BF202 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
