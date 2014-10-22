@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import EventKitUI
 
 
 
@@ -19,7 +20,9 @@ protocol EventProtocol{
 }
 
 enum Types{
+    
     case Study, Work, Rest, Food, Fun, Default
+    
     func simpleDescription() -> String{
         switch self{
         case .Study:

@@ -15,28 +15,15 @@ class FirstViewController: UIViewController {
 
     override func viewDidLoad(){
         super.viewDidLoad()
-    
-        //accessing the event store
-        var eventStore = EKEventStore();
-        eventStore.requestAccessToEntityType(EKEntityTypeEvent) {
-            (success: Bool, error: NSError!) in
-            println("Got permission = \(success); error = \(error)")
-        }
+           
         
-        //accessing calendars, we use "nil" below means all calendars
-        var eventCalendars = eventStore.calendarsForEntityType(EKEntityMaskEvent) as [EKCalendar]
+    }
+    override func viewWillAppear(animated: Bool) {
         
-        //accessing events
-        var startDate = NSDate().dateByAddingTimeInterval(-999998);
-        var endDate = NSDate();
-        var predicate = eventStore.predicateForEventsWithStartDate(startDate, endDate: endDate, calendars: nil);
-        var events = eventStore.eventsMatchingPredicate(predicate);
-    
-        var event = events[3] as EKEvent
-        println(event.startDate)
-        println(event.endDate)
-        
-        
+        var startDate = NSDate().dateByAddingTimeInterval(-999998)
+        var endDate = NSDate()
+        var ev = Events(startDate: startDate, endDate: endDate)
+        ev.simpleDescription()
         
     }
 

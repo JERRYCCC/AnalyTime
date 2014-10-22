@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C40D0FCA19F6ABF2002BF202 /* EventDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40D0FC919F6ABF2002BF202 /* EventDoc.swift */; };
-		C40D0FCC19F6B1B6002BF202 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40D0FCB19F6B1B6002BF202 /* Event.swift */; };
+		C40D0FCE19F6B94D002BF202 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40D0FCD19F6B94D002BF202 /* Events.swift */; };
+		C425E3B619F6CC26001EAE3E /* EventColllectingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C425E3B519F6CC26001EAE3E /* EventColllectingTest.swift */; };
 		C431D12619F13F7100CA0EC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C431D12519F13F7100CA0EC8 /* AppDelegate.swift */; };
 		C431D12819F13F7100CA0EC8 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C431D12719F13F7100CA0EC8 /* FirstViewController.swift */; };
 		C431D12A19F13F7100CA0EC8 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C431D12919F13F7100CA0EC8 /* SecondViewController.swift */; };
@@ -31,7 +32,8 @@
 
 /* Begin PBXFileReference section */
 		C40D0FC919F6ABF2002BF202 /* EventDoc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDoc.swift; sourceTree = "<group>"; };
-		C40D0FCB19F6B1B6002BF202 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		C40D0FCD19F6B94D002BF202 /* Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		C425E3B519F6CC26001EAE3E /* EventColllectingTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventColllectingTest.swift; sourceTree = "<group>"; };
 		C431D12019F13F7100CA0EC8 /* AnalyTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnalyTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C431D12419F13F7100CA0EC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C431D12519F13F7100CA0EC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,7 +70,6 @@
 		C431D11719F13F7100CA0EC8 = {
 			isa = PBXGroup;
 			children = (
-				C431D14919F17C8E00CA0EC8 /* EventKit.framework */,
 				C431D12219F13F7100CA0EC8 /* AnalyTime */,
 				C431D13A19F13F7100CA0EC8 /* AnalyTimeTests */,
 				C431D12119F13F7100CA0EC8 /* Products */,
@@ -101,9 +102,10 @@
 		C431D12319F13F7100CA0EC8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C431D14919F17C8E00CA0EC8 /* EventKit.framework */,
 				C431D12419F13F7100CA0EC8 /* Info.plist */,
 				C40D0FC919F6ABF2002BF202 /* EventDoc.swift */,
-				C40D0FCB19F6B1B6002BF202 /* Event.swift */,
+				C40D0FCD19F6B94D002BF202 /* Events.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				C431D13D19F13F7100CA0EC8 /* AnalyTimeTests.swift */,
+				C425E3B519F6CC26001EAE3E /* EventColllectingTest.swift */,
 				C431D13B19F13F7100CA0EC8 /* Supporting Files */,
 			);
 			path = AnalyTimeTests;
@@ -174,6 +177,7 @@
 				TargetAttributes = {
 					C431D11F19F13F7100CA0EC8 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = X3S5933A9R;
 					};
 					C431D13619F13F7100CA0EC8 = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -225,11 +229,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C40D0FCE19F6B94D002BF202 /* Events.swift in Sources */,
 				C431D12A19F13F7100CA0EC8 /* SecondViewController.swift in Sources */,
 				C40D0FCA19F6ABF2002BF202 /* EventDoc.swift in Sources */,
 				C431D12619F13F7100CA0EC8 /* AppDelegate.swift in Sources */,
 				C431D12819F13F7100CA0EC8 /* FirstViewController.swift in Sources */,
-				C40D0FCC19F6B1B6002BF202 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C425E3B619F6CC26001EAE3E /* EventColllectingTest.swift in Sources */,
 				C431D13E19F13F7100CA0EC8 /* AnalyTimeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,6 +359,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = AnalyTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -364,6 +370,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = AnalyTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
