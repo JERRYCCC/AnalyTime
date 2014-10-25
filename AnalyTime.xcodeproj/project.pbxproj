@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C40D0FCA19F6ABF2002BF202 /* EventDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40D0FC919F6ABF2002BF202 /* EventDoc.swift */; };
-		C40D0FCE19F6B94D002BF202 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40D0FCD19F6B94D002BF202 /* Events.swift */; };
+		C4189CCF19FBBD21000FEFBA /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4189CCE19FBBD21000FEFBA /* Type.swift */; };
+		C4189CD319FBC214000FEFBA /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4189CD219FBC214000FEFBA /* Main.swift */; };
 		C425E3B619F6CC26001EAE3E /* EventColllectingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C425E3B519F6CC26001EAE3E /* EventColllectingTest.swift */; };
 		C431D12619F13F7100CA0EC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C431D12519F13F7100CA0EC8 /* AppDelegate.swift */; };
 		C431D12819F13F7100CA0EC8 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C431D12719F13F7100CA0EC8 /* FirstViewController.swift */; };
@@ -31,8 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C40D0FC919F6ABF2002BF202 /* EventDoc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDoc.swift; sourceTree = "<group>"; };
-		C40D0FCD19F6B94D002BF202 /* Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		C4189CCE19FBBD21000FEFBA /* Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
+		C4189CD219FBC214000FEFBA /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		C425E3B519F6CC26001EAE3E /* EventColllectingTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventColllectingTest.swift; sourceTree = "<group>"; };
 		C431D12019F13F7100CA0EC8 /* AnalyTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnalyTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C431D12419F13F7100CA0EC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,6 +70,7 @@
 		C431D11719F13F7100CA0EC8 = {
 			isa = PBXGroup;
 			children = (
+				C4189CD219FBC214000FEFBA /* Main.swift */,
 				C431D12219F13F7100CA0EC8 /* AnalyTime */,
 				C431D13A19F13F7100CA0EC8 /* AnalyTimeTests */,
 				C431D12119F13F7100CA0EC8 /* Products */,
@@ -104,8 +105,7 @@
 			children = (
 				C431D14919F17C8E00CA0EC8 /* EventKit.framework */,
 				C431D12419F13F7100CA0EC8 /* Info.plist */,
-				C40D0FC919F6ABF2002BF202 /* EventDoc.swift */,
-				C40D0FCD19F6B94D002BF202 /* Events.swift */,
+				C4189CCE19FBBD21000FEFBA /* Type.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -229,11 +229,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C40D0FCE19F6B94D002BF202 /* Events.swift in Sources */,
+				C4189CD319FBC214000FEFBA /* Main.swift in Sources */,
 				C431D12A19F13F7100CA0EC8 /* SecondViewController.swift in Sources */,
-				C40D0FCA19F6ABF2002BF202 /* EventDoc.swift in Sources */,
 				C431D12619F13F7100CA0EC8 /* AppDelegate.swift in Sources */,
 				C431D12819F13F7100CA0EC8 /* FirstViewController.swift in Sources */,
+				C4189CCF19FBBD21000FEFBA /* Type.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

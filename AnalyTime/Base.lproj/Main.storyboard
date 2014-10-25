@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -17,40 +17,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="EBb-kU-yhV">
-                                <rect key="frame" x="16" y="20" width="568" height="29"/>
-                                <segments>
-                                    <segment title="Fun"/>
-                                    <segment title="Work"/>
-                                    <segment title="Study"/>
-                                </segments>
-                            </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="hRk-dw-Pba">
                                 <rect key="frame" x="16" y="56" width="568" height="487"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="btQ-db-F4i">
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="cell" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="Lhu-Fz-SMi" detailTextLabel="xat-fX-ZAe" style="IBUITableViewCellStyleValue1" id="btQ-db-F4i">
                                         <rect key="frame" x="0.0" y="0.0" width="568" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="btQ-db-F4i" id="hLt-he-vBw">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Lhu-Fz-SMi">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xat-fX-ZAe">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="9pv-A4-QxB" id="tQr-im-Xom"/>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="CnB-hK-0ic"/>
+                                </connections>
                             </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="oDm-GL-ud0">
+                                <rect key="frame" x="16" y="20" width="568" height="29"/>
+                                <segments>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentTap" destination="9pv-A4-QxB" eventType="valueChanged" id="LsL-dW-27U"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="hRk-dw-Pba" firstAttribute="leading" secondItem="EBb-kU-yhV" secondAttribute="leading" id="J1w-gh-lxF"/>
+                            <constraint firstItem="hRk-dw-Pba" firstAttribute="leading" secondItem="oDm-GL-ud0" secondAttribute="leading" id="II9-pu-dTR"/>
                             <constraint firstAttribute="centerY" secondItem="hRk-dw-Pba" secondAttribute="centerY" constant="0.5" id="Jkv-dk-kSt"/>
-                            <constraint firstAttribute="centerY" secondItem="EBb-kU-yhV" secondAttribute="centerY" constant="266" id="QPF-4E-EKE"/>
-                            <constraint firstItem="EBb-kU-yhV" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="VIT-Po-cAk"/>
-                            <constraint firstItem="hRk-dw-Pba" firstAttribute="trailing" secondItem="EBb-kU-yhV" secondAttribute="trailing" id="fdT-6Q-csn"/>
-                            <constraint firstItem="EBb-kU-yhV" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="xod-b4-XZA"/>
-                            <constraint firstItem="hRk-dw-Pba" firstAttribute="top" secondItem="EBb-kU-yhV" secondAttribute="bottom" constant="8" id="y4a-f3-mhU"/>
+                            <constraint firstItem="hRk-dw-Pba" firstAttribute="top" secondItem="oDm-GL-ud0" secondAttribute="bottom" constant="8" symbolic="YES" id="Yvh-7E-4SU"/>
+                            <constraint firstAttribute="centerY" secondItem="oDm-GL-ud0" secondAttribute="centerY" constant="266" id="egJ-q5-qFB"/>
+                            <constraint firstItem="hRk-dw-Pba" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="itJ-T5-phn"/>
+                            <constraint firstItem="hRk-dw-Pba" firstAttribute="trailing" secondItem="oDm-GL-ud0" secondAttribute="trailing" id="rEh-Xd-nhB"/>
+                            <constraint firstItem="hRk-dw-Pba" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="yi2-ba-y5A"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="eventTableView" destination="hRk-dw-Pba" id="yKa-bh-Bz2"/>
+                        <outlet property="segmentControl" destination="oDm-GL-ud0" id="Wce-IQ-zS3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -68,29 +92,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="195" y="279" width="210" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="192" y="329" width="216" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mjm-OP-aAq">
+                                <rect key="frame" x="16" y="20" width="568" height="29"/>
+                                <segments>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentTap" destination="8rJ-Kc-sve" eventType="valueChanged" id="gHQ-kw-4eA"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bg0-VO-S5r">
+                                <rect key="frame" x="16" y="126" width="568" height="157"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="157" id="4Dn-74-oZa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                            <constraint firstItem="mjm-OP-aAq" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="ReK-ZW-7y4"/>
+                            <constraint firstItem="mjm-OP-aAq" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailingMargin" id="SNG-A0-L8C"/>
+                            <constraint firstAttribute="centerX" secondItem="bg0-VO-S5r" secondAttribute="centerX" id="TwL-dM-3J0"/>
+                            <constraint firstItem="bg0-VO-S5r" firstAttribute="leading" secondItem="mjm-OP-aAq" secondAttribute="leading" id="aCL-XU-1Dq"/>
+                            <constraint firstAttribute="centerY" secondItem="mjm-OP-aAq" secondAttribute="centerY" constant="266" id="dzU-d3-sSs"/>
+                            <constraint firstItem="bg0-VO-S5r" firstAttribute="top" secondItem="mjm-OP-aAq" secondAttribute="bottom" constant="78" id="wzo-Bc-1YU"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="label" destination="bg0-VO-S5r" id="dTi-Jn-nRJ"/>
+                        <outlet property="segmentControl" destination="mjm-OP-aAq" id="8vJ-OO-yCz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
