@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--Setting Up Events-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="AnalyTime" customModuleProvider="target" sceneMemberID="viewController">
@@ -61,16 +61,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="hRk-dw-Pba" firstAttribute="leading" secondItem="oDm-GL-ud0" secondAttribute="leading" id="II9-pu-dTR"/>
-                            <constraint firstAttribute="centerY" secondItem="hRk-dw-Pba" secondAttribute="centerY" constant="0.5" id="Jkv-dk-kSt"/>
-                            <constraint firstItem="hRk-dw-Pba" firstAttribute="top" secondItem="oDm-GL-ud0" secondAttribute="bottom" constant="8" symbolic="YES" id="Yvh-7E-4SU"/>
-                            <constraint firstAttribute="centerY" secondItem="oDm-GL-ud0" secondAttribute="centerY" constant="266" id="egJ-q5-qFB"/>
-                            <constraint firstItem="hRk-dw-Pba" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="itJ-T5-phn"/>
-                            <constraint firstItem="hRk-dw-Pba" firstAttribute="trailing" secondItem="oDm-GL-ud0" secondAttribute="trailing" id="rEh-Xd-nhB"/>
-                            <constraint firstItem="hRk-dw-Pba" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="yi2-ba-y5A"/>
+                            <constraint firstItem="oDm-GL-ud0" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="5KP-6W-gli"/>
+                            <constraint firstItem="hRk-dw-Pba" firstAttribute="top" secondItem="oDm-GL-ud0" secondAttribute="bottom" constant="8" id="6Mr-EJ-Wdi"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="hRk-dw-Pba" secondAttribute="bottom" constant="8" id="6js-Dh-rTk"/>
+                            <constraint firstItem="hRk-dw-Pba" firstAttribute="trailing" secondItem="oDm-GL-ud0" secondAttribute="trailing" id="8F9-ks-EC0"/>
+                            <constraint firstAttribute="centerY" secondItem="hRk-dw-Pba" secondAttribute="centerY" constant="0.5" id="BdR-4q-7fa"/>
+                            <constraint firstItem="hRk-dw-Pba" firstAttribute="leading" secondItem="oDm-GL-ud0" secondAttribute="leading" id="Igy-I9-VaB"/>
+                            <constraint firstItem="oDm-GL-ud0" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="S0j-xN-wEw"/>
+                            <constraint firstItem="oDm-GL-ud0" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="Tyd-eg-vjL"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Setting Up Events" image="first" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="eventTableView" destination="hRk-dw-Pba" id="yKa-bh-Bz2"/>
                         <outlet property="segmentControl" destination="oDm-GL-ud0" id="Wce-IQ-zS3"/>
@@ -80,7 +81,7 @@
             </objects>
             <point key="canvasLocation" x="650" y="-394"/>
         </scene>
-        <!--Second-->
+        <!--Result-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="AnalyTime" customModuleProvider="target" sceneMemberID="viewController">
@@ -105,7 +106,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bg0-VO-S5r">
                                 <rect key="frame" x="16" y="126" width="568" height="157"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="157" id="4Dn-74-oZa"/>
+                                    <constraint firstAttribute="height" constant="157" id="w6h-81-WdB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -114,15 +115,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="mjm-OP-aAq" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="ReK-ZW-7y4"/>
-                            <constraint firstItem="mjm-OP-aAq" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailingMargin" id="SNG-A0-L8C"/>
-                            <constraint firstAttribute="centerX" secondItem="bg0-VO-S5r" secondAttribute="centerX" id="TwL-dM-3J0"/>
-                            <constraint firstItem="bg0-VO-S5r" firstAttribute="leading" secondItem="mjm-OP-aAq" secondAttribute="leading" id="aCL-XU-1Dq"/>
-                            <constraint firstAttribute="centerY" secondItem="mjm-OP-aAq" secondAttribute="centerY" constant="266" id="dzU-d3-sSs"/>
-                            <constraint firstItem="bg0-VO-S5r" firstAttribute="top" secondItem="mjm-OP-aAq" secondAttribute="bottom" constant="78" id="wzo-Bc-1YU"/>
+                            <constraint firstItem="bg0-VO-S5r" firstAttribute="top" secondItem="mjm-OP-aAq" secondAttribute="bottom" constant="78" id="71D-I2-NiU"/>
+                            <constraint firstItem="mjm-OP-aAq" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="7wI-ve-F8z"/>
+                            <constraint firstItem="mjm-OP-aAq" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="VTc-1J-n4B"/>
+                            <constraint firstItem="mjm-OP-aAq" firstAttribute="leading" secondItem="bg0-VO-S5r" secondAttribute="trailing" constant="-568" id="YF4-Z1-kt4"/>
+                            <constraint firstItem="mjm-OP-aAq" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailingMargin" id="nsr-XT-gZw"/>
+                            <constraint firstAttribute="centerX" secondItem="bg0-VO-S5r" secondAttribute="centerX" id="svA-Hw-cVg"/>
+                            <constraint firstItem="mjm-OP-aAq" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="unk-0D-YK9"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Result" image="second" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="label" destination="bg0-VO-S5r" id="dTi-Jn-nRJ"/>
                         <outlet property="segmentControl" destination="mjm-OP-aAq" id="8vJ-OO-yCz"/>

@@ -70,9 +70,7 @@ class SecondViewController: UIViewController {
         }
         label.numberOfLines = 0
         label.text = labelString
-        
-        
-        
+    
     }
 
     @IBAction func segmentTap (){
